@@ -1,0 +1,28 @@
+.promo {
+    min-height: 700px;
+    background: url('../../img/main_bg.png') center center / cover no-repeat;
+    &__wrapper {
+        padding-top: 39px;
+    }
+    &__header {
+        min-height: 65px;
+        display: grid;
+        grid-template-columns: 140px 540px;
+        grid-template-rows: 65px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+        &-item {
+            font-size: 13px;
+            font-weight: bold;
+            color: #fff;
+            line-height: 13px;
+            text-transform: uppercase;
+            list-style-type: none;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.flag {
+    min-height: 85px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 19px;
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 28px minmax(130px, auto);
+        column-gap: 11px;
+    }
+    &__descr {
+        display: grid;
+        grid-template-rows: 13px 32px;
+        row-gap: 5px;
+    }
+    &__title {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 16px;
+    }
+    &__subtitle {
+        font-size: 12px;
+        font-weight: 300;
+        color: #242424;
+        line-height: 16px;
+    }
+}
