@@ -3,6 +3,9 @@
     background: url('../../img/main_bg.png') center center / cover no-repeat;
     &__wrapper {
         padding-top: 39px;
+        display: grid;
+        grid-template-rows: 65px 569px;
+        row-gap: 27px;
     }
     &__header {
         min-height: 65px;
@@ -23,6 +26,54 @@
             line-height: 13px;
             text-transform: uppercase;
             list-style-type: none;
+            &:hover {
+                color: #00c2f0;
+            }
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    &__body {
+        display: grid;
+        grid-template-columns: 524px auto;
+        justify-content: space-between;
+    }
+    &__title {
+        padding-top: 133px;
+        font-size: 41px;
+        font-weight: 900;
+        line-height: 48px;
+        color: #fff;
+    }
+    &__subtitle {
+        padding-top: 27px;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 30px;
+        color: #fff;
+        span {
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+    &__btn {
+        padding-top: 39px;
+        button {
+            width: 241px;
+            height: 60px;
+            background-color: #00c2f0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            line-height: 30px;
+            color: #fff;
+            &:hover {
+                background-color: #029fc7;
+            }
         }
     }
 }
