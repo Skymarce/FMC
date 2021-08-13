@@ -25,7 +25,7 @@
         border-radius: 4px;
         margin-bottom: 0;
     }
-    &__item {
+    a {
         display: flex;
         align-items: center;
         min-height: 49px;
@@ -37,6 +37,10 @@
         list-style-type: none;
         border-right: 1px solid #8e908c;
         padding-right: 26px;
+        text-decoration: none;
+        &:hover {
+            color: $main-color;
+        }
         &:first-child {
             padding-left: 0;
         }
@@ -48,13 +52,7 @@
 }
 
 
-/* Слайдер */
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
-/* Ограничивающая оболочка */
+
 .slick-list {
     overflow: hidden;
 }
@@ -62,26 +60,10 @@
 .slick-track{
     display: flex;
 }
-/* Слайд */
-.slick-slide{}
-/* Слайд активный (показывается) */
 .slick-slide.slick-active{
     display: flex;
     justify-content: center;
 }
-/* Слайд основной */
-.slick-slide.slick-current{
-}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
-/* Стрелка */
-.slick-arrow{}
-/* Стрелка влево */
-
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
 
 .decision__carousel {
     position: relative;
@@ -102,6 +84,7 @@
     height: 60px;
     border: none;
     margin-left: 50px;
+    outline: none;
 }
 /* Стрелка вправо */
 .decision__carousel .slick-arrow.slick-next{
@@ -111,4 +94,5 @@
     height: 60px;
     border: none;
     margin-right: 50px;
+    outline: none;
 }

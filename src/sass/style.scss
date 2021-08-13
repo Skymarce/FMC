@@ -12,7 +12,10 @@
     margin: 0 auto;
 }
 
+@import 'base/variables';
 @import 'blocks/flags';
 @import 'blocks/promo';
 @import 'blocks/prengi';
 @import 'blocks/decision';
+@import 'blocks/advantages';
+@import 'blocks/data';
