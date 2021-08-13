@@ -1,0 +1,53 @@
+.prengi {
+    &__wrapper {
+        padding-top: 79px;
+        padding-bottom: 81px;
+        display: grid;
+        grid-template-columns: repeat(3, 360px);
+        grid-template-rows: 255px 140px 255px;
+        row-gap: 37px;
+        justify-content: space-between;
+    }
+    &__item {
+        position: relative;
+    }
+    &__descr {
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 222px;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        color: #393939;
+    }
+    &__down {
+        padding-top: 13px;
+        grid-column: 1 / 4;
+    }
+    &__img {
+        display: grid;
+        justify-content: center;
+    }
+    &__title {
+        padding-top: 33px;
+        display: grid;
+        justify-content: center;
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 30px;
+        color: #393939;
+    }
+    &__descr-bold {
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 265px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        color: #393939;
+    }
+}
