@@ -1,0 +1,91 @@
+.footer {
+    min-height: 497px;
+    background-color: #0082a1;
+    &__wrapper {
+        padding-top: 49px;
+        padding-bottom: 40px;
+        display: grid;
+        grid-template-columns: 377px 264px 117px 112px;
+        justify-content: space-between;
+    }
+    &__about {
+        a {
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 700;
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+    &__img {
+        padding-top: 20px;
+    }
+    &__descr {
+        padding-top: 23px;
+        font-size: 14px;
+        font-weight: 300;
+        color: #fff;
+    }
+    &__module {
+        a {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 19px;
+            text-align: left;
+            color: #fff;
+            span {
+                font-size: 16px;
+                line-height: 19px;
+                font-weight: 700;
+                color: #ffffff;
+            }
+        }
+    }
+    &__banch {
+        a {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 19px;
+            text-align: left;
+            color: #fff;
+            span {
+                font-size: 16px;
+                line-height: 19px;
+                font-weight: 700;
+                color: #ffffff;
+            }
+        }
+    }
+    &__aboutus {
+        a {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 19px;
+            text-align: left;
+            color: #fff;
+            span {
+                font-size: 16px;
+                line-height: 19px;
+                font-weight: 700;
+                color: #ffffff;
+            }
+        }
+    }
+    &__divider {
+        grid-column: 1 / 5;
+        margin-top: 44px;
+        width: 1171px;
+        height: 1px;
+        background-color: #fff;
+        opacity: 0.3;
+    }
+    &__company {
+        grid-column: 1 / 5;
+        padding-top: 36px;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 17px;
+        text-align: center;
+        color: #fff;
+    }
+}
