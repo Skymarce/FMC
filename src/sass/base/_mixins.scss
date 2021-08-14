@@ -1,0 +1,29 @@
+@mixin before_square-left {
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 167px;
+        height: 167px;
+        background-color: $main-color;
+        opacity: 0.3;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 54%;
+    }
+}
+
+@mixin before_square-right {
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 167px;
+        height: 167px;
+        background-color: $main-color;
+        opacity: 0.3;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 54%;
+    }
+}

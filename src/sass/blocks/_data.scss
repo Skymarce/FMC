@@ -1,6 +1,8 @@
 .data {
+    position: relative;
     max-height: 580px;
     &__bg {
+        position: relative;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
@@ -11,5 +13,64 @@
             height: 100%;
             object-fit: cover;
         }
+    }
+    &__title {
+        position: absolute;
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 36px;
+        text-align: center;
+        color: #fff;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2,525px);
+        column-gap: 165px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 51%;
+        margin-bottom: 181px;
+        z-index: 2;
+    }
+    &__item-left {
+        @include before_square-left;
+    }
+    &__item-right {
+        @include before_square-right;
+    }   
+    &__subtitle-left {
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 22px;
+        text-align: right;
+        color: #fff;
+        padding-left: 35px;
+    }
+    &__subtitle-right {
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 22px;
+        text-align: left;
+        color: #fff;
+    }
+    &__descr-left {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 26px;
+        text-align: right;
+        color: #fff;
+    }
+    &__descr-right {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 26px;
+        text-align: left;
+        color: #fff;
     }
 }
