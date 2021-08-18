@@ -74,7 +74,7 @@
     &__divider {
         grid-column: 1 / 5;
         margin-top: 44px;
-        width: 1171px;
+        max-width: 1171px;
         height: 1px;
         background-color: #fff;
         opacity: 0.3;
