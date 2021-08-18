@@ -1,8 +1,9 @@
 .decision {
-    min-height: 889px;
+    max-height: 889px;
     background: url('../../img/second_bg.png') center center / cover no-repeat;
     &__wrapper {
         padding-top: 79px;
+        padding-bottom: 61px;
     }
     &__title {
         font-size: 30px;
@@ -18,7 +19,7 @@
     }
     &__menu {
         padding: 7px 33px 9px 32px;
-        width: 843px;
+        max-width: 843px;
         display: flex;
         justify-content: space-between;
         border: 1px solid #fff;
@@ -36,7 +37,8 @@
         color: #fff;
         list-style-type: none;
         border-right: 1px solid #8e908c;
-        padding-right: 26px;
+        padding-right: 13px;
+        padding-left: 13px;
         text-decoration: none;
         &:hover {
             color: $main-color;
